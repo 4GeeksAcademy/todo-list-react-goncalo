@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://t4.ftcdn.net/jpg/00/92/47/85/360_F_92478590_BbuqPZQDFPOOjIbhQajB3oq2z5cfsVZt.jpg");
+  background-image: url("https://st2.depositphotos.com/5647624/50812/i/450/depositphotos_508126030-stock-photo-old-wood-texture-background-dark.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -9,7 +9,7 @@ body {
 
 .todo-container {
   background-image: url("https://png.pngtree.com/png-clipart/20221116/ourmid/pngtree-old-paper-scroll-manuscript-png-image_6445608.png");
-  background-size: auto;
+  background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Garamond", serif;
@@ -19,6 +19,19 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.document-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .todo-list {
@@ -27,8 +40,36 @@ body {
   max-width: 100px;
   width: 65%;
   margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  overflow-y: auto;
+  max-height: 80vh;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .todo-list li {
   margin-bottom: 5px;
 }
+
+.title {
+  margin-top: -20%;
+}
+
+
+.todo-form {
+  position: absolute; 
+  bottom: 20px; 
+  right: 20px;
+  display: flex;
+}
+
+.todo-form input[type="text"] {
+  width: 200px;
+}
+
+.todo-form button {
+  margin-left: 10px;
+}
+
